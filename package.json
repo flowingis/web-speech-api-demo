@@ -7,10 +7,17 @@
     "type": "git",
     "url": "git+https://github.com/e-xtrategy/web-speech-api-demo.git"
   },
+  "scripts": {
+    "start": "node ./node_modules/gulp/bin/gulp serve"
+  },
   "author": "e-xtrategy",
   "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/e-xtrategy/web-speech-api-demo/issues"
   },
-  "homepage": "https://github.com/e-xtrategy/web-speech-api-demo#readme"
+  "homepage": "https://github.com/e-xtrategy/web-speech-api-demo#readme",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-connect": "4.0.0"
+  }
 }
