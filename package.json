@@ -1,0 +1,16 @@
+{
+  "name": "web-speech-api-demo",
+  "version": "1.0.0",
+  "description": "Web Speech Api Demo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-xtrategy/web-speech-api-demo.git"
+  },
+  "author": "e-xtrategy",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/e-xtrategy/web-speech-api-demo/issues"
+  },
+  "homepage": "https://github.com/e-xtrategy/web-speech-api-demo#readme"
+}
