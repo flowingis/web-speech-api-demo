@@ -8,6 +8,7 @@
     "url": "git+https://github.com/e-xtrategy/web-speech-api-demo.git"
   },
   "scripts": {
+    "prestart": "npm install",
     "start": "node ./node_modules/gulp/bin/gulp serve"
   },
   "author": "e-xtrategy",
