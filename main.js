@@ -22,7 +22,8 @@
     };
 
     recognition.onend = function(){
-        alert(lastTranscript);
+        addToChat("You",lastTranscript);
+        respond();
     };
 
 
@@ -33,4 +34,23 @@
     globalScope.stop = function(){
         recognition.stop();
     };
+
+    var addToChat = function(prefix,text){
+        $('#chat').append('<li>' + prefix + ": " + text + '</li>');
+    };
+
+    var speak = function(text){
+        if(globalScope.SpeechSynthesisUtterance){
+            var message = new globalScope.SpeechSynthesisUtterance(text);
+            globalScope.speechSynthesis.speak(message);
+        }
+    };
+
+    var respond = function(){
+        return $.get("https://baconipsum.com/api/?type=all-meat&sentences=1").then(function(results){
+            var text = results[0];
+            speak(text);
+            addToChat('System',text);
+        });
+    }
 })(window);
