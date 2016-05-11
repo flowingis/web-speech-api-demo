@@ -16,7 +16,7 @@
     recognition.onresult = function(e){
         _.each(e.results,function(result){
             if(result.isFinal){
-                lastTranscript += _.maxBy(result, 'confidence').transcript;
+                lastTranscript = _.maxBy(result, 'confidence').transcript;
             }
         });
     };
