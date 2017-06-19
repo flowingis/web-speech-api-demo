@@ -6,3 +6,7 @@ Demo project for web speech api
 Just launch
 
     npm start
+
+# Live demo
+
+You can see a live demo [here](https://e-xtrategy.github.io/web-speech-api-demo/)

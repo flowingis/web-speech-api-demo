@@ -9,7 +9,8 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "node ./node_modules/gulp/bin/gulp serve"
+    "start": "gulp serve",
+    "deploy": "node publish"
   },
   "author": "e-xtrategy",
   "license": "WTFPL",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/e-xtrategy/web-speech-api-demo#readme",
   "devDependencies": {
+    "gh-pages": "1.0.0",
     "gulp": "3.9.1",
     "gulp-connect": "4.0.0"
   }
